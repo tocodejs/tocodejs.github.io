@@ -21,7 +21,7 @@ window.addEventListener('keydown', logKey);
 function logKey(e) {
    var newestComment = document.createTextNode(e.target.className);
 document.getElementById('result').appendChild(newestComment);
-  e.stopPropogation();
+  e.stopImmediatePropagation();
 }
     })
   </script>     
