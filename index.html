@@ -16,6 +16,7 @@
       <script>
       
     sap.ui.getCore().attachInit(function(){
+      document.getElementsByClassName("sapUiBody")[0].classList.toggle("sapUiBody")
      var easyMDE = new EasyMDE({element: document.getElementById('area')});
       new sap.m.TextArea({value:"tsljflsdkf"}).placeAt(document.getElementById("text"));
 window.addEventListener('keydown', logKey);
