@@ -16,7 +16,7 @@
       <script>
       
     sap.ui.getCore().attachInit(function(){
-      document.getElementsByClassName("sapUiTheme-sap_bluecrystal")[0].className = ''
+      document.getElementsByClassName("sapUiTheme-sap_bluecrystal")[0].classList.toggle("sapUiTheme-sap_bluecrystal");
      var easyMDE = new EasyMDE({element: document.getElementById('area')});
       new sap.m.TextArea({value:"tsljflsdkf"}).placeAt(document.getElementById("text"));
 window.addEventListener('keydown', logKey);
