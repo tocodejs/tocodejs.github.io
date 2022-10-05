@@ -16,6 +16,7 @@
       
     sap.ui.getCore().attachInit(function(){
      var easyMDE = new EasyMDE({element: document.getElementById('area')});
+      new sap.m.Text({text:"tsljflsdkf"}).placeAt(document.getElementById("text"));
 window.addEventListener('keydown', logKey);
 
 function logKey(e) {
@@ -27,5 +28,6 @@ document.getElementById('result').appendChild(newestComment);
  <body id="content" style="margin: 0" class="sapUiBody">
 <textarea id="area"></textarea>
 <div id="result"></div>
+   <div id="text"></div>
 </body>
 </html>
