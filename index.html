@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html> 
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+<script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+  <script src='https://openui5.hana.ondemand.com/resources/sap-ui-core.js' data-sap-ui-theme='sap_bluecrystal' data-sap-ui-libs='sap.m' data-sap-ui-compatVersion="edge" data-sap-ui-preload="async" data-sap-ui-bindingSyntax='complex' data-sap-ui-resourceroots='{"sap.m.sample": ""}'
+  data-sap-ui-frameOptions="trusted">
+  </script>
+  </head>
+
+  
+      <script>
+      
+    sap.ui.getCore().attachInit(function(){
+      var text = new sap.m.Text({text:"ff"});
+      console.log(text);
+      text.placeAt(document.getElementById("content"))
+      console.log(text.getDomRef())  
+    })
+  </script>     
+ <body id="content" style="margin: 0" class="sapUiBody">
+</body>
+</html>
