@@ -16,9 +16,16 @@
       
     sap.ui.getCore().attachInit(function(){
      var easyMDE = new EasyMDE({element: document.getElementById('area')});
+window.addEventListener('keydown', logKey);
+
+function logKey(e) {
+   var newestComment = document.createTextNode(e.target.nodeName);
+document.getElementById('result').appendChild(newestComment);
+}
     })
   </script>     
  <body id="content" style="margin: 0" class="sapUiBody">
 <textarea id="area"></textarea>
+<div id="result"></div>
 </body>
 </html>
